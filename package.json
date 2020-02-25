@@ -1,0 +1,31 @@
+{
+    "name": "ow-tags",
+    "version": "1.0.0",
+    "description": "A vue component to manage tags.",
+    "author": {
+        "name": "José Reyes",
+        "email": "code@jreyes.es",
+        "url": "https://jreyes.es"
+    },
+     "scripts": {
+         "build": "npm run build:umd & npm run build:es & npm run build:unpkg",
+         "build:umd": "rollup --config build/rollup.config.js --format umd --file dist/ow-tags.umd.js",
+         "build:es": "rollup --config build/rollup.config.js --format es --file dist/ow-tags.esm.js",
+         "build:unpkg": "rollup --config build/rollup.config.js --format iife --file dist/ow-tags.min.js"
+     },
+    "main": "./dist/ow-tags.js",
+    "module": "./dist/ow-tags.js",
+    "unpkg": "./dist/ow-tags.js",
+    "files": [
+        "dist"
+    ],
+    "devDependencies": {
+        "rollup": "^0.57.1",
+        "rollup-plugin-buble": "^0.19.2",
+        "rollup-plugin-vue": "^5.0.0",
+        "vue": "^2.5.16",
+        "vue-template-compiler": "^2.5.16"
+    },
+    "license": "MIT",
+    "repository": "github:redxtech/vue-plyr"
+}
