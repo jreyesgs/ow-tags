@@ -23,7 +23,7 @@
 </template>
 <script>
 export default {
-    name: 'VueTags',
+    name: 'OWTags',
     props: {
         all: {
             type: Array,
